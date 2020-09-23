@@ -1,0 +1,19 @@
+
+gith으로로 add 
+
+--> git remote add origin https://github.com/jkyun6/cna-order
+
+git으로 commit 
+--> git 
+
+github로 push 하는 법
+--> git 
+
+---------------------
+Azure shell에서 github의 소스를 가져옴 
+--> git clone https://github.com/jkyun6/cna-order.git
+
+Azure 에 dockerizing
+
+--> az acr build --registry admin15acr --image admin15acr.azurecr.io/orders:latest .
+
