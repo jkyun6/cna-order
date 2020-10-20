@@ -1,19 +1,19 @@
 
-githÀ¸·Î·Î add 
+github ë¡œ add 
 
---> git remote add origin https://github.com/jkyun6/cna-order
+--> git remote add origin https://github.com/jkyun6/cna-order  (  <<----  remoteì— ìžˆëŠ” github ìœ„ì¹˜ë¥¼ "origin" ì´ë¼ëŠ” ì´ë¦„ìœ¼ë¡œ ì§€ì •í•œë‹¤ëŠ” ëœ»?) 
 
-gitÀ¸·Î commit 
---> git 
+git commit 
+--> git commit -m "init"   
 
-github·Î push ÇÏ´Â ¹ý
---> git 
+githubë¡œ push í•˜ëŠ” ë²•
+--> git push -u origin master ( <<--- github ì˜  "origin" ìœ„ì¹˜ë¡œ pushí•¨)
 
 ---------------------
-Azure shell¿¡¼­ githubÀÇ ¼Ò½º¸¦ °¡Á®¿È 
+Azure shellì—ì„œ githubì˜ ì†ŒìŠ¤ë¥¼ ê°€ì ¸ì˜´ 
 --> git clone https://github.com/jkyun6/cna-order.git
 
-Azure ¿¡ dockerizing
+Azure ì— dockerizing
 
 --> az acr build --registry admin15acr --image admin15acr.azurecr.io/orders:latest .
 
