@@ -1,5 +1,5 @@
 server:
-  port:8082
+  port: 8082
 
 spring:
   profiles: default
@@ -8,6 +8,28 @@ spring:
       kafka:
         binder:
           brokers: localhost:9092
+      bindings:
+        input:
+          group: order
+          destination: shop
+          contentType: application/json
+        output:
+          destination: shop
+          contentType: application/json
+
+
+---
+
+server:
+  port: 8080
+
+spring:
+  profiles: docker
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: my-kafka.kafka.svc.cluster.local:9092
       bindings:
         input:
           group: order

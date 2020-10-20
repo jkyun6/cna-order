@@ -36,6 +36,9 @@ public class Order {
         } catch (JsonProcessingException e) {
             throw new RuntimeException("JSON format exception", e);
         }
+        System.out.println("==== this is Product ID & Name ====");
+        System.out.println(this.getProductId());
+        System.out.println(this.getProductName());
 //        System.out.println(json);
         // 메세지 큐에 publish
         Processor processor = OrderApplication.applicationContext.getBean(Processor.class);
